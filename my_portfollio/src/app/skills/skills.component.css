@@ -1,0 +1,21 @@
+#sect1 {
+    height: 100%;
+    width: 100%;
+    color: #acb678;
+    /* background-image: url("../../assets/2193010.jpg"); */
+    background-image: linear-gradient(180deg, rgb(19, 20, 20), rgb(8, 128, 30));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Ensure absolute positioning works inside */
+    overflow: hidden;
+    
+  }
+
+  .resized-image {
+    width: 100%; /* Ensure image fits within the column */
+    height: auto; /* Maintain aspect ratio */
+ 
+    max-width: 100px; /* Adjust max-width as needed */
+}

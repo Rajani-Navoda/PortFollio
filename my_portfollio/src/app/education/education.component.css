@@ -1,0 +1,59 @@
+#sect1 {
+    min-height: 100vh; /* Ensure the section takes up at least the full viewport height */
+    width: 100%;
+    background-image: url("../../assets/2193010.jpg");
+    background-size: cover; /* Ensure the background image covers the entire container */
+    background-position: center; /* Center the background image */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the top */
+    position: relative;
+    overflow: auto; /* Allow scrolling if content overflows */
+    color: aliceblue; 
+    font-family: monospace; 
+    padding: 20px; /* Add padding for better spacing */
+    box-sizing: border-box; /* Ensure padding is included in the element's total width and height */
+}
+
+.container {
+    width: 100%;
+    max-width: 960px; /* Adjust based on your preference */
+    padding: 15px; /* Add padding for spacing */
+    background: rgba(0, 0, 0, 0.6); /* Optional: Add a semi-transparent background for readability */
+    border-radius: 8px; /* Optional: Add rounded corners */
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap; /* Ensure columns wrap if needed */
+    width: 100%;
+}
+
+.col-md-8,
+.col-sm {
+    padding: 15px; /* Add padding to columns */
+}
+
+
+.col-sm {
+    /* Responsive sizing for smaller columns */
+    text-align: right; /* Align text to the right */
+    align-self: flex-start; /* Align date to the top */
+}
+
+h3 {
+    font-size: 15px; /* Increase font size for better readability */
+    margin-top: 20px; /* Add space above headings */
+    color:gray
+}
+
+p,
+.points {
+    font-size: 14px; /* Increase font size for better readability */
+    line-height: 1.5; /* Improve readability with line spacing */
+    color: cadetblue;
+}
+
+hr.my-4 {
+    margin: 20px 0; /* Add margin for spacing around the horizontal rule */
+}

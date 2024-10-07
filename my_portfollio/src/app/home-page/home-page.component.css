@@ -1,0 +1,171 @@
+#sect1 {
+    height: 100%;
+    width: 100%;
+    color: #acb678;
+    background-image: url("../../assets/2193010.jpg");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    
+  }
+
+  .social-media-container {
+    position: absolute;
+    right: 20px; /* Adjust as needed to move it from the right edge */
+    top: 50%; /* Start at the middle of the page */
+    transform: translateY(-50%); /* Center vertically */
+}
+
+.social-media {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.social-media li {
+    display: block;
+}
+
+.social-icon {
+    font-size: 40px; /* Adjust size as needed */
+    color: #ead8d8; /* Adjust color as needed */
+}
+
+.social-media a {
+    text-decoration: none;
+}
+
+.social-media a:hover .social-icon {
+    color: #007bff; /* Adjust hover color as needed */
+}
+
+.c2 {
+    font-weight: 700;
+    font-size: 3.5em;
+    text-align: center;
+    text-shadow: 2px 2px rgb(38, 104, 47);
+  }
+  
+  .c2 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.1em;
+    padding-right: 0.05em;
+    padding-bottom: 0.15em;
+  }
+  
+  .c2 .line {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 3px;
+    background-color: #e7ede6;
+    transform-origin: 0 50%;
+  }
+  
+  .c2 .line1 {
+    top: 0;
+    left: 0;
+  }
+  
+  .c2 .letter {
+    display: inline-block;
+    line-height: 1em;
+  }
+  
+  body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-fluid {
+  padding: 0; /* Remove default padding */
+}
+
+.custom-row {
+  background-color: rgb(159, 205, 159); /* Green background */
+  height: 75px; /* Fixed height */
+  position: relative;
+}
+
+.custom-col {
+  display: flex;
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+  color: black; 
+  font-size: 25px;
+  font-family: monospace;
+}
+
+.custom-col .glyphicon {
+  margin-right: 5px; /* Space between icon and text */
+}
+
+@keyframes slideFromLeft {
+  0% {
+    transform: translateX(-100%);
+    /* background-color: black; */
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(0);
+    /* background-color: rgba(8, 204, 8, 0.445); */
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-row {
+  animation: slideFromLeft 7s ease-in-out infinite;
+}
+
+.download-link {
+  text-decoration: none; /* Remove underline */
+  color: #000000; /* Change text color */
+  font-weight: bold; /* Make the text bold */
+  font-size: 16px; /* Adjust the font size */
+  display: inline-flex; /* Align icon and text */
+  align-items: center; /* Vertically center the text and icon */
+  font-family: monospace;
+}
+
+.download-link:hover {
+  color: #4f5f72; /* Change text color on hover */
+}
+
+.download-link i {
+  margin-right: 6px; /* Add some space between the icon and text */
+}
+
+.btn-secondary{
+
+  color: #090909;
+  padding: 0.7em 1.7em;
+  font-size: 18px;
+  border-radius: 0.5em;
+  background: #e8e8e8;
+  cursor: pointer;
+  border: 1px solid #e8e8e8;
+  transition: all 0.3s;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 5px #ffffff;
+}
+
+
+.resized-image {
+  width: 100%; /* Ensure image fits within the column */
+  height: auto; /* Maintain aspect ratio */
+
+  max-width: 70px;
+  max-height: 100px;
+   /* Adjust max-width as needed */
+}

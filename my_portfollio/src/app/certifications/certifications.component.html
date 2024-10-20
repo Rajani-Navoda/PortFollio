@@ -1,17 +1,17 @@
 <div id="sect1">
     <div id="sect1" class="mt-5 pt-4">
-        <h1 class="display-4" style="font-family: monospace;">Certifications</h1>
+        <h1 class="display-4" style="font-family: monospace; font-size:45px;">Certifications</h1>
         <ul class="nav nav-tabs">
             <li class="nav-item">
                 <a class="nav-link" 
                    [class.active]="activeTab === 'certifications'" 
                    (click)="activeTab = 'certifications'">Professional Certifications</a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
                 <a class="nav-link" 
                    [class.active]="activeTab === 'courses'" 
                    (click)="activeTab = 'courses'">Extra curlicular</a>
-            </li>
+            </li> -->
         </ul>
         <div class="tab-content">
             <div [class]="getTabClass('certifications')" role="tabpanel">
@@ -20,53 +20,25 @@
     
                         <hr>
                         <div class="col-md-6">
+                            <img src="../../assets/certifications/intro_to_devops.jpg" class="img-fluid" alt="Image 3" style="height: 400px; width: 500px;">
+                        </div>
+                        <div class="col-md-6">
+                            <img src="../../assets/certifications/frontendMeta.jpg" class="img-fluid" alt="frontend-meta" style="height: 400px; width: 500px;">
+                        </div>
+                        
+                           
+                    </div>
+                    <hr>
+                    
+                    <div class="row">
+                        <div class="col-md-6">
                             <img src="../../assets/certifications/Fundementals_of_java.jpg" class="img-fluid" alt="Image 1" style="height: 400px; width: 500px;">
                         </div>
                         <div class="col-md-6">
                             <img src="../../assets/certifications/img1.jpg" class="img-fluid" alt="Image 2" style="height: 400px; width: 500px;">
-                        </div>     
-                    </div>
-                    <hr>
-                    
-                    <div class="row">
-                        <div class="col-md-6">
-                            <img src="../../assets/certifications/intro_to_devops.jpg" class="img-fluid" alt="Image 3" style="height: 400px; width: 500px;">
-                        </div>
+                        </div>  
                     </div>
                     
-                </div>
-            </div>
-            <div [class]="getTabClass('courses')" role="tabpanel">
-                <div class="container">
-                    <div class="row">
-                        <hr>
-                        <div class="col-md-6">
-                            <img src="../../assets/certifications/leo.jpg" class="img-fluid img-custom" alt="Image 4" style="height: 400px; width: 500px;">
-                        </div>
-                        <div class="col-md-6">
-                            <img src="../../assets/certifications/vishrad.jpeg" class="img-fluid img-custom" alt="Image 6" style="height: 400px; width: 600px;">
-                        </div>
-                    </div>
-                    <hr>
-                    <!-- <div class="row">
-                        <div class="col-md-6">
-                            <img src="../../assets/certifications/English.jpg" class="img-fluid img-custom" alt="Image 6">
-                        </div>
-                        <div class="col-md-6">
-                           
-                            <img src="../../assets/certifications/British_council.jpg" class="img-fluid img-custom" alt="Image 5">
-                        </div>
-                    </div> -->
-       
-                    <div class="row" >
-                        <div class="col-md-6">
-                            <img src="../../assets/certifications/deploma.jpg" class="img-fluid img-custom" alt="Image 6" style="height: 500px; width: 400px;">
-                        </div>
-                        <div class="col-md-6">
-                            <img src="../../assets/certifications/prathma.jpg" class="img-fluid img-custom" alt="Image 6" style="height: 500px; width: 400px;">
-                        </div>
-                    </div>
-
                 </div>
             </div>
         </div>

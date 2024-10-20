@@ -1,17 +1,19 @@
 #sect1 {
-    height: 100%;
-    width: 100%;
-    color: #acb678;
-    background-image: url("../../assets/2193010.jpg");
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative; 
-    overflow: hidden;
+  width: 100%;
+  min-height: 100vh; /* Ensures that the section covers at least the viewport height */
+  color: #acb678;
+  background-image: url("../../assets/aaa.jpg");
+  background-size: cover; /* Ensures the background image covers the entire container without being cut off */
+  background-position: center; /* Centers the background image */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
     
   }
-
+ 
   .btn-secondary{
 
     color: #090909;
@@ -23,6 +25,7 @@
     border: 1px solid #e8e8e8;
     transition: all 0.3s;
     box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 5px #ffffff;
+    font-family: monospace;
   }
 
 
@@ -42,7 +45,7 @@
     --gap: 12px;
     --color: #acb678;
     
-    width: 200px;
+    width: 500px;
     aspect-ratio: 1;
     box-sizing: border-box;
     border-radius: 50%;
@@ -88,4 +91,22 @@
     background: #ccc;
   }
 
- 
+  @media (max-width: 768px) { /* Adjustments for smaller screens like tablets and mobile phones */
+    #sect1 {
+        padding: 20px; /* Adds padding to avoid content touching the edges */
+        flex-direction: column; /* Stacks items vertically */
+        justify-content: flex-start; /* Aligns content to start from top, making the upper part visible */
+    }
+
+    #sect1 .jumbotron {
+        margin-top: 20px; /* Ensures there's space on the top on smaller screens */
+        padding: 20px; /* Decreases padding for smaller devices */
+    }
+
+    #sect1 img {
+        width: 100%; /* Full width images on smaller screens */
+        height: auto; /* Keeps the aspect ratio of the image */
+        margin-top: 20px; /* Adds space above the image */
+    }
+}
+  

@@ -74,7 +74,7 @@
   
   .c2 .letter {
     display: inline-block;
-    line-height: 1em;
+    line-height: 2em;
   }
   
   body, html {
@@ -169,3 +169,68 @@
   max-height: 100px;
    /* Adjust max-width as needed */
 }
+
+/* Base styles */
+.c2 .letters {
+  display: inline-block;  /* Allows more control over text wrapping */
+  white-space: nowrap;    /* Prevents wrapping unless specified */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .c2 .letters {
+    white-space: normal; /* Allows wrapping */
+    max-width: 280px;   /* Adjust this value based on desired break points */
+  }
+}
+
+@media (max-width: 480px) {
+  .c2 .letters {
+    font-size: 40px; /* Smaller font size for very small devices */
+    max-width: 200px; /* Adjust this to control when text wraps */
+  }
+}
+
+/* Default styles for larger screens */
+.headline {
+  font-size: 50px; /* Initial size suitable for large screens */
+  color: rgb(193, 150, 98);
+  font-family: monospace;
+}
+
+/* Adjustments for medium screens like tablets */
+@media (max-width: 768px) {
+.headline {
+  font-size: 40px; /* Slightly smaller font size for medium screens */
+}
+}
+
+/* Adjustments for small screens like mobile phones */
+@media (max-width: 480px) {
+.headline {
+  font-size: 30px; /* Even smaller font size for small screens */
+}
+}
+
+/* Default styles */
+.intro-text {
+  font-size: 16px; /* Start with a base font size */
+  color: rgb(114, 114, 114);
+  font-family: monospace;
+  text-align: center; /* This could also be set here instead of inline */
+}
+
+/* Adjustments for medium screens */
+@media (max-width: 768px) {
+.intro-text {
+  font-size: 14px; /* Slightly smaller font size for medium screens */
+}
+}
+
+/* Adjustments for small screens */
+@media (max-width: 480px) {
+.intro-text {
+  font-size: 12px; /* Even smaller font size for small screens */
+}
+}
+  

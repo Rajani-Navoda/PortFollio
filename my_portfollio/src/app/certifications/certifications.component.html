@@ -1,47 +1,32 @@
-<div id="sect1">
-    <div id="sect1" class="mt-5 pt-4">
-        <h1 class="display-4" style="font-family: monospace; font-size:45px;">Certifications</h1>
+<div id="sect1" class="d-flex flex-column align-items-center py-5">
+    <div class="container">
+        <h1 class="display-4 text-center" style="font-family: monospace; font-size:45px;">Certifications</h1>
         <ul class="nav nav-tabs">
             <li class="nav-item">
-                <a class="nav-link" 
-                   [class.active]="activeTab === 'certifications'" 
-                   (click)="activeTab = 'certifications'">Professional Certifications</a>
+                <a class="nav-link" [class.active]="activeTab === 'certifications'" (click)="activeTab = 'certifications'">Professional Certifications</a>
             </li>
-            <!-- <li class="nav-item">
-                <a class="nav-link" 
-                   [class.active]="activeTab === 'courses'" 
-                   (click)="activeTab = 'courses'">Extra curlicular</a>
-            </li> -->
         </ul>
-        <div class="tab-content">
+        <div class="tab-content mt-4">
             <div [class]="getTabClass('certifications')" role="tabpanel">
                 <div class="container">
                     <div class="row">
-    
-                        <hr>
-                        <div class="col-md-6">
-                            <img src="../../assets/certifications/intro_to_devops.jpg" class="img-fluid" alt="Image 3" style="height: 400px; width: 500px;">
+                        <div class="col-md-6 mb-4">
+                            <img src="../../assets/certifications/intro_to_devops.jpg" class="img-fluid" alt="Image 3">
                         </div>
-                        <div class="col-md-6">
-                            <img src="../../assets/certifications/frontendMeta.jpg" class="img-fluid" alt="frontend-meta" style="height: 400px; width: 500px;">
+                        <div class="col-md-6 mb-4">
+                            <img src="../../assets/certifications/frontendMeta.jpg" class="img-fluid" alt="frontend-meta">
                         </div>
-                        
-                           
                     </div>
-                    <hr>
-                    
                     <div class="row">
-                        <div class="col-md-6">
-                            <img src="../../assets/certifications/Fundementals_of_java.jpg" class="img-fluid" alt="Image 1" style="height: 400px; width: 500px;">
+                        <div class="col-md-6 mb-4">
+                            <img src="../../assets/certifications/Fundementals_of_java.jpg" class="img-fluid" alt="Image 1">
                         </div>
-                        <div class="col-md-6">
-                            <img src="../../assets/certifications/img1.jpg" class="img-fluid" alt="Image 2" style="height: 400px; width: 500px;">
-                        </div>  
+                        <div class="col-md-6 mb-4">
+                            <img src="../../assets/certifications/img1.jpg" class="img-fluid" alt="Image 2">
+                        </div>
                     </div>
-                    
                 </div>
             </div>
         </div>
     </div>
 </div>
-

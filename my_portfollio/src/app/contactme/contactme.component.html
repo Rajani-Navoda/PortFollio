@@ -1,77 +1,58 @@
-<div id="sect1">
-    <!-- <h1 class="display-4" style="font-family: monospace;">Contact Me</h1>
-    <hr class="my-4"> <br><br> -->
-    <div class="container">
-		<div class="text-center">
-			<h1 class="display-4" style="font-family: monospace; color: #acb678;">Let's talk. </h1>
-			<div style="font-size: 20px; color: gray;">
-				Let's get in touch and start something new!               
-			</div>
-            <hr class="my-4"> <br>
-		</div>
-		<div class="content">
-			<div class="col-1" style="color: rgb(133, 133, 12);">
-				<div class="address-line">
-					<span class="material-icons">
-                        room
-                        </span>
-					<div class="contact-info" >
-						<div class="contact-info-title" style="width: 50px; color:cadetblue">Address</div>
-						<div>420, </div>
-						<div>Kajugolla Road,</div>
-						<div>Udugampola.</div>
-					</div>
-				</div>
-				<div class="address-line">
-					<i class="bi bi-telephone"></i>
-					<div class="contact-info">
-						<div class="contact-info-title" style="width: 50px; color:cadetblue">Phone</div>
-						<div >+94 773 383 286</div>
-					</div>
-				</div>
-				<div class="address-line">
-					<i class="bi bi-envelope"></i>
-					<div class="contact-info" >
-						<div class="contact-info-title" style="width: 50px; color:cadetblue">Email</div>
-						<div>{{email}}</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-2" id="grad">
-				<form  action="https://formspree.io/f/movqaopl"
-				method="POST">
-					<div class="form-container" style="font-family: monospace; color: #acb678; ">
-						<h2 style="font-size: 40px;">Send Message</h2>
-						<div class="form-row">
-							<label>Full Name</label>
-							<div>
-								<!-- <input type="text" class="form-field"> -->
-								<input type="text" name="name" required class="form-field">
-							</div>
-						</div>
-						<div class="form-row">
-							<label>Email</label>
-							<div>
-								<!-- <input type="text" class="form-field"> -->
-								<input type="email" name="email" required class="form-field" >
-							</div>
-						</div>
-						<div class="form-row">
-							<!-- <label>Type your message...</label>
-							<div>
-								<input type="text" class="form-field">
-							</div> -->
-							<label>
-								Your message:
-							  </label>
-							  <textarea name="message" class="form-field"></textarea>
-						</div>
-						<!-- <input type="button" class="send-btn" value="Send"> -->
-						<button type="submit" class="send-btn">Send</button>
-					</div>
-				</form>
-			</div>
-		</div>
-	</div>
-
+<div id="sect1" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="container mt-5 pt-4">
+        <div class="text-center">
+            <h1 class="display-4" style="font-family: monospace; color: #acb678;">Let's talk.</h1>
+            <div style="font-size: 20px; color: gray;">
+                Let's get in touch and start something new!
+            </div>
+            <hr class="my-4">
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-6" style="color: rgb(205, 205, 188);">
+                <div class="address-line mb-4">
+                    <span class="material-icons">room</span>
+                    <div class="contact-info">
+                        <div class="contact-info-title" style="width: 50px; color: cadetblue;">Address</div>
+                        <div>420,</div>
+                        <div>Kajugolla Road,</div>
+                        <div>Udugampola.</div>
+                    </div>
+                </div>
+                <div class="address-line mb-4">
+                    <i class="bi bi-telephone"></i>
+                    <div class="contact-info">
+                        <div class="contact-info-title" style="width: 50px; color: cadetblue;">Phone</div>
+                        <div>+94 773 383 286</div>
+                    </div>
+                </div>
+                <div class="address-line mb-4">
+                    <i class="bi bi-envelope"></i>
+                    <div class="contact-info">
+                        <div class="contact-info-title" style="width: 50px; color: cadetblue;">Email</div>
+                        <div>{{email}}</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6" id="grad" style="background-image: linear-gradient(rgb(4, 17, 7), rgb(8, 145, 24));">
+                <form action="https://formspree.io/f/movqaopl" method="POST">
+                    <div class="form-container p-3" style="color: #acb678;">
+                        <h2 style="font-size: 40px;">Send Message</h2>
+                        <div class="form-group mb-3">
+                            <label for="name">Full Name</label>
+                            <input type="text" name="name" id="name" required class="form-control">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" required class="form-control">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="message">Your message:</label>
+                            <textarea name="message" id="message" class="form-control"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-info">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 </div>

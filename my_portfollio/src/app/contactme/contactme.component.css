@@ -90,26 +90,12 @@
      .col-1 {
       width: 360px;
     } 
+    .tab-content {
+      padding-bottom: 20px; /* Add padding for smaller screens */
+  }
   }
   
-  @media all and (max-width: 700px) {
-    .content {
-      display: block;
-    }
-    .col-2 {
-      margin-top: 40px;
-    } 
-    .col-1{
-    width:100%;
-    }
-  }
-  
-  @media all and (max-width: 500px) {
-    .container {
-      padding: 10px;
-    }
-  }
-
   #grad {
     background-image: linear-gradient(rgb(4, 17, 7), rgb(8, 145, 24));
   }
+  

@@ -49,7 +49,7 @@ h3 {
 
 p,
 .points {
-    font-size: 12px; /* Increase font size for better readability */
+    font-size: 14px; /* Increase font size for better readability */
     line-height: 1.5; /* Improve readability with line spacing */
     color: cadetblue;
 }

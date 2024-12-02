@@ -1,14 +1,16 @@
 #sect1 {
-    height: 100%;
-    width: 100%;
-    color: #acb678;
-    background-image: url("../../assets/2193010.jpg");
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    overflow: hidden;
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  color: #acb678;
+  background-image: url("../../assets/2193010.jpg");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
     
   }
 
@@ -47,14 +49,14 @@
     font-size: 3.5em;
     text-align: center;
     text-shadow: 2px 2px rgb(38, 104, 47);
+    margin: 0 20px;
   }
   
   .c2 .text-wrapper {
     position: relative;
     display: inline-block;
-    padding-top: 0.1em;
-    padding-right: 0.05em;
-    padding-bottom: 0.15em;
+    padding: 0.1em 0.05em 0.15em;
+    width: 100%;
   }
   
   .c2 .line {
@@ -72,9 +74,14 @@
     left: 0;
   }
   
-  .c2 .letter {
+  /* .c2 .letter {
     display: inline-block;
     line-height: 2em;
+  } */
+  .c2 .letters {
+    display: inline-block;
+    line-height: 1.2;
+    word-wrap: break-word;
   }
   
   body, html {
@@ -179,21 +186,21 @@
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .c2 .letters {
-    white-space: normal; /* Allows wrapping */
-    max-width: 280px;   /* Adjust this value based on desired break points */
+    white-space: normal; 
+    max-width: 280px;  
   }
 }
 
 @media (max-width: 480px) {
   .c2 .letters {
-    font-size: 40px; /* Smaller font size for very small devices */
-    max-width: 200px; /* Adjust this to control when text wraps */
+    font-size: 40px; 
+    max-width: 200px; 
   }
 }
 
-/* Default styles for larger screens */
+
 .headline {
-  font-size: 50px; /* Initial size suitable for large screens */
+  font-size: 50px; 
   color: rgb(193, 150, 98);
   font-family: monospace;
 }
@@ -201,17 +208,35 @@
 /* Adjustments for medium screens like tablets */
 @media (max-width: 768px) {
 .headline {
-  font-size: 40px; /* Slightly smaller font size for medium screens */
+  font-size: 30px; 
 }
+
 }
+
+/* @media (min-width: 768px) and (max-width: 1024px) {
+  .headline {
+    font-size: 20px; 
+  }
+  .c2 .letters {
+    max-width: 500px;
+  }
+} */
+
+
 
 /* Adjustments for small screens like mobile phones */
 @media (max-width: 480px) {
 .headline {
-  font-size: 30px; /* Even smaller font size for small screens */
+  font-size: 30px; 
 }
 }
 
+@media (max-width: 768px) {
+  .headline {
+    font-size: 15px; /* Even smaller font size for small screens */
+  }
+  }
+  
 /* Default styles */
 .intro-text {
   font-size: 16px; /* Start with a base font size */
@@ -233,4 +258,62 @@
   font-size: 12px; /* Even smaller font size for small screens */
 }
 }
-  
+
+.full-height-container {
+  position: relative;
+  width: 100%;
+}
+
+.social-media-container {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 25px;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.social-icon {
+  font-size: 30px;
+  color: #ead8d8;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-media a:hover .social-icon {
+  color: #007bff;
+  transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+  .social-media-container {
+      position: relative;
+      right: auto;
+      top: auto;
+      transform: none;
+      margin-top: 20px;
+      width: 100%;
+      background-color: transparent;
+  }
+
+  .social-media {
+      flex-direction: row;
+      justify-content: center;
+      gap: 25px;
+  }
+
+  .social-icon {
+      font-size: 25px;
+  }
+}
+
